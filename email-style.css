@@ -6,6 +6,10 @@
     border: 2px solid purple;
 }
 
+.profile-button{
+    margin: 6px;
+}
+
 .meaty-row{
     border: 1px solid black;
 }
