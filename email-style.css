@@ -1,0 +1,48 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+body {
+}
+
+.head-row {
+    border: 2px solid purple;
+}
+
+.meaty-row{
+    border: 1px solid black;
+}
+
+.col {
+    border: 3px solid red;
+}
+
+.email-center{
+    background-color: #f4f3ef;
+    width: 100%;
+}
+.all-emails{
+    font-size: 13px;
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.email-links{
+    color: black;
+}
+.email-2{ background-color: #ffffff;
+padding: 4px;
+margin-top: 40px;
+border-radius: 10px;
+}
+.email-top{
+
+    margin-top: 20px;
+}
+  
+.sender{
+      font-weight: bold;
+      font-size: 15px;
+    
+  }
+.spacing{
+      margin-top: 40px;
+  }
