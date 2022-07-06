@@ -1,51 +1,74 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 
-/* body {} */
-
-.head-row {
-    border: 2px solid purple;
+.root-container {
+    height: 100vh;
+    width: 100vw;
+    max-width: 1440px;
 }
 
-.profile-button{
+/* Header area */
+.head-col {
+    padding: 0px;
+}
+
+.navbar {
+    background-color: #8f8f8f;
+}
+
+.navbar-toggler {
+    border-color: #198754;
+    outline-color: #198754;
+}
+
+.navbar-toggler:hover {
+    background-color: #198754;
+    color: white;
+}
+
+.search-form {
+    border-color: #198754;
+}
+
+.profile-button {
     margin: 6px;
 }
 
-.meaty-row{
-    border: 1px solid black;
+/* Mailbox area */
+.left-col {
+    background-color: #ffffff;
+    padding: 0px;
 }
 
-.col {
-    border: 3px solid red;
+.list-group-item {
+    background-color: #ffffff;
 }
 
-.email-center{
-    background-color: #f4f3ef;
-    width: 100%;
+/* Email notifications area */
+.center-col {
+    background-color: rgb(226, 223, 223);
 }
-.all-emails{
-    font-size: 13px;
-    margin-top: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.email-links{
-    color: black;
-}
-.email-2{ background-color: #ffffff;
-padding: 4px;
-margin-top: 40px;
-border-radius: 10px;
-}
-.email-top{
 
-    margin-top: 20px;
+.notification-card {
+    background-color: inherit;
 }
-  
-.sender{
-      font-weight: bold;
-      font-size: 15px;
-    
-  }
-.spacing{
-      margin-top: 40px;
-  }
+
+.notification-card:hover {
+    background-color: white;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+.notification-content {
+    font-size: 0.95rem;
+}
+
+.notification-date {
+    float: right;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.notification-title {
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+    font-weight: bold;
+}

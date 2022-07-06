@@ -9,68 +9,55 @@
     <title>Email</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container root-container">
         <!-- Row for header navbar -->
         <div class="row head-row">
-            <div class="col">
-                <nav class="navbar navbar-expand-lg bg-light">
+            <div class="col head-col">
+                <!-- Navbar -->
+                <nav class="navbar navbar-fixed-top navbar-expand-lg">
                     <div class="container-fluid">
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                          <li class="nav-item dropdown d-lg-none">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Mailboxes
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="#">Inbox</a></li>
-                              <li><a class="dropdown-item" href="#">Sent</a></li>
-                              <li><a class="dropdown-item" href="#">Drafts</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Trash</a></li>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="welcome-row d-none d-lg-block">
+                            <span class="welcome-msg">Welcome, user!</span><br>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown d-lg-none">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Mailboxes
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Inbox</a></li>
+                                <li><a class="dropdown-item" href="#">Sent</a></li>
+                                <li><a class="dropdown-item" href="#">Drafts</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Trash</a></li>
+                                </ul>
+                                <div class="welcome-row">
+                                    <span class="welcome-msg nav-link">Welcome, user!</span><br>
+                                </div>
+                            </li>
                             </ul>
-                          </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                          <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                      </div>
+                        </div>
+                      <form class="d-flex search-bar" role="search">
+                        <input class="search-form form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">
+                            <i class="bi-search"></i>
+                        </button>
+                      </form>
                       <button class="btn profile-button btn-outline-success" type="">
                         <i class="bi-person"></i>
                       </button>
                     </div>
                 </nav>
-                <!-- <div class="navbar">
-                    <div class="container-fluid">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="bi-list"></i>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Inbox</a></li>
-                                    <li><a class="dropdown-item" href="#">Sent</a></li>
-                                    <li><a class="dropdown-item" href="#">Trash</a></li>
-                                </ul>
-                            </div>
-                            </div>
-                            <form role="search">
-                                <i class="bi-search"></i>
-                                <input class="form" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                            </form>    
-                            <i class="bi-person"></i>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
         <!-- Row for three main columns -->
         <div class="row meaty-row">
             <!-- mailboxes -->
-            <div class="col col-lg-2 d-none d-lg-block">
+            <div class="col left-col col-lg-2 d-none d-lg-block">
                 <div class="list-group list-group-flush">
                     <button type="button" class="list-group-item list-group-item-action" aria-current="true">
                       Inbox
@@ -81,43 +68,68 @@
                 </div>
             </div>
             <!-- email previews -->
-            <div class="col col-md d-block">
-                <div class="all-emails">
-                    <a class="email-links" href="">
-                    <div class="email-1 spacing">
-                        <div class="email-top d-flex justify-content-between">  
-                            <div class="sender">Linkedin</div>
-                            <div class="date">2:15 PM</div>
+            <div class="center-col col-12 col-md-4 col-lg-4">
+                <div class="card notification-card border-0">
+                    <div class="card-body">
+                        <span class="notification-date">3:00pm</span>
+                        <div class="notification-title">Important Subject</div>
+                        <p class="notification-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus placeat harum explicabo, perferendis vitae alias?</p>
+                    </div>
+                </div>
+                <div class="card notification-card border-0 mt-3">
+                    <div class="card-body">
+                        <span class="notification-date">July 3, 2022</span>
+                        <div class="notification-title">Urgent advertisement!</div>
+                        <p class="notification-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo dolores amet incidunt excepturi, tempore placeat. Impedit sit ullam dolorum repellendus.</p>
+                    </div>
+                </div>
+                <div class="card notification-card border-0 mt-3">
+                    <div class="card-body">
+                        <span class="notification-date">July 2, 2022</span>
+                        <div class="notification-title">Your SSN has been cancelled</div>
+                        <p class="notification-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo dolores amet incidunt excepturi, tempore placeat. Impedit sit ullam dolorum repellendus.</p>
+                    </div>
+                </div>
+                <div class="card notification-card border-0 mt-3">
+                    <div class="card-body">
+                        <span class="notification-date">July 2, 2022</span>
+                        <div class="notification-title">You've won a free room</div>
+                        <p class="notification-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo dolores amet incidunt excepturi, tempore placeat. Impedit sit ullam dolorum repellendus.</p>
+                    </div>
+                </div>
+                <div class="card notification-card border-0 mt-3">
+                    <div class="card-body">
+                        <span class="notification-date">July 1, 2022</span>
+                        <div class="notification-title">Other shows you might like</div>
+                        <p class="notification-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo dolores amet incidunt excepturi, tempore placeat. Impedit sit ullam dolorum repellendus.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- open email viewer -->
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="container">
+                    <!-- open email header -->
+                    <div class="row mt-3">
+                        <div class="col">To: me@email.com<br>From: you@email.com<br>
+                        </div>    
+                    </div>
+                    
+                    <!-- open email filler -->
+                    <div class="row email-content mt-5">
+                        <div class="col">
+                            <div class="email-subject h3 pt-1">Urgent Advertisement!</div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ratione, sit error incidunt voluptatum, vitae non nesciunt sequi voluptatibus labore aliquam voluptatem corporis atque veritatis necessitatibus iusto, veniam unde iste sint laborum! Voluptatem nam maiores totam hic non aperiam, eum ut reiciendis voluptatibus eius voluptates magni similique. Odit, optio quis.</p>
                         </div>
-                        <P>You have a new connection request.</P>
-                        <hr>
-                    </div></a>
-                    <a class="email-links" href="">
-                    <div class="email-2-container">
-                        <div class="email-2 spacing">
-                            <div class="email-top d-flex justify-content-between">
-                                <div class="sender">Amazon</div>
-                                <div class="date">Feb 10, 2020</div>
-                            </div>
-                            <p>Order shipped</p>
-                            <hr>
+                    </div>
+
+                    <!-- open email reply field -->
+                    <form action="" method="">
+                        <div class="form-group reply-box-container border rounded d-grid">
+                            <textarea class="form-control border-0" rows="6"></textarea>
+                            <button class="btn btn-outline-success mt-1">Reply</button>
                         </div>
-                    </div></a>
-                    <a class="email-links" href="">
-                    <div class="email-3 spacing">
-                        <div class="email-top d-flex justify-content-between">
-                            <div class="sender">YouTube Music</div>
-                            <div class="date">Feb 5, 2020</div>
-                        </div>
-                        <p>You have 3 new recommended songs</p>
-                        <hr>
-                    </div></a>
-                </div> 
-            </div> 
-             <!-- big email viewer -->
-            <div class="col col-md d-none d-md-block">
-                <h1>big email</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nihil eos voluptatum expedita necessitatibus dolorum magni nemo. Odit incidunt labore soluta vel fugiat deserunt, minus a at? Veniam quibusdam soluta obcaecati! Id autem molestias praesentium non, accusantium sed deleniti ducimus.</p>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
