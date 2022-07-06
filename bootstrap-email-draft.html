@@ -15,13 +15,22 @@
             <div class="col head-col">
                 <!-- Navbar -->
                 <nav class="navbar navbar-fixed-top navbar-expand-lg">
-                    <div class="container-fluid">
+                    <div class="container-fluid d-flex">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="welcome-row d-none d-lg-block">
+                        <div class="welcome-row me-5 ms-5 d-none d-lg-block">
                             <span class="welcome-msg">Welcome, user!</span><br>
                         </div>
+                        <form class="d-flex search-bar" role="search">
+                            <input class="search-form form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">
+                                <i class="bi-search"></i>
+                            </button>
+                        </form>
+                        <button class="btn profile-button btn-outline-success" type="">
+                            <i class="bi-person"></i>
+                        </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item dropdown d-lg-none">
@@ -41,15 +50,6 @@
                             </li>
                             </ul>
                         </div>
-                      <form class="d-flex search-bar" role="search">
-                        <input class="search-form form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">
-                            <i class="bi-search"></i>
-                        </button>
-                      </form>
-                      <button class="btn profile-button btn-outline-success" type="">
-                        <i class="bi-person"></i>
-                      </button>
                     </div>
                 </nav>
             </div>
